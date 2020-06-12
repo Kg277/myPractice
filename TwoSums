@@ -1,0 +1,17 @@
+// Solving the twosums question from leetcode 
+//the first method is by Brute force way where the Time Complexity : O(n*2) and space complexity O(1)
+
+
+const twoSum = function(nums, target) {
+let res = {}
+for(let i = 0 ; i < nums.length; i++) {
+  for(let j = i+1 ; j < nums.length; j++ ){
+    res = target - nums[i]
+      if(nums[j] === res  ){
+        return[i,j];
+       }
+   }  
+ }
+};
+
+
